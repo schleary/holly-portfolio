@@ -2,37 +2,45 @@
 <html>
 <head>
   <title>Folio</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="/application.css" type =text/css />
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <ul>
-    <li><a href="">Home</a></li>
-    <li><a href="">Projects</a></li>
-    <li><a href="">Resume</a></li>
-    <li><a href="">Blog</a></li>
-    <li><a href="">Holly</a></li>
-  </ul>
+  <nav>
+    <ul>
+      <h1>
+        <li><a href="">Home</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Resume</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Holly</a></li>
+      </h1>
+    </ul>
+  </nav>
 
   <!-- projects -->
-  <ul>
-    <li><a href="http://wat-do-seattle.com/" target="_blank">Wat Do</a></li>
-    <li><a href="https://feeed-meee.herokuapp.com/" target="_blank">Feeeeed Meee</a></li>
-    <li><a href="https://gardenrow.herokuapp.com/" target="_blank">Ada's Garden</a></li>
-    <li><a href="http://betsy-rails.herokuapp.com/" target="_blank">Scraps</a></li>
-    <li><a href="https://muzikbox.herokuapp.com/" target="_blank">Muzik Box</a></li>
-    <!-- <li><a href="pic">The Trippy Caterpillar</a></li> -->
-  </ul>
-
+  <div class="projects">
+    <ul>
+      <li><a href="http://wat-do-seattle.com/" target="_blank">Wat Do</a></li>
+      <li><a href="https://feeed-meee.herokuapp.com/" target="_blank">Feed Me</a></li>
+      <li><a href="https://gardenrow.herokuapp.com/" target="_blank">Ada's Garden</a></li>
+      <li><a href="http://betsy-rails.herokuapp.com/" target="_blank">Scraps</a></li>
+      <li><a href="https://muzikbox.herokuapp.com/" target="_blank">Muzik Box</a></li>
+      <!-- <li><a href="pic">The Trippy Caterpillar</a></li> -->
+    </ul>
+  </div>
 
 <%= yield %>
+<footer>
   <ul>
     <li><a href="https://github.com/schleary" target="_blank">GitHub</a></li>
     <li><a href="https://www.linkedin.com/profile/view?id=233832133&trk=nav_responsive_tab_profile_pic" target="_blank">LinkedIn</a></li>
     <li><a href="https://twitter.com/schleary" target="_blank">Twitter</a></li>
     <li><a href="http://adadevelopersacademy.org/" target="_blank">Ada</a></li>
   </ul>
+</footer>
 
 </body>
 </html>

@@ -13,3 +13,48 @@
  *= require_tree .
  *= require_self
  */
+
+a {
+   text-decoration: none;
+   display: inline;
+   text-align: center;
+ }
+
+ /* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+li {
+   text-decoration: none;
+   display: inline;
+   text-align: center;
+   margin: 2%;
+ }
+
+ nav {
+   text-align: center;
+ }
+
+footer {
+  text-align: center;
+}
+
+.projects {
+  text-align: center;
+}
