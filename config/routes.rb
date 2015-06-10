@@ -1,20 +1,18 @@
 Rails.application.routes.draw do
 
-  get 'blogs/index'
+  get     '/',                   to: 'home#index',      as: :root
 
-  get 'blogs/create'
+  get     '/blogs',              to: 'blogs#index',     as: :blogs
+  get     '/blogs/new',          to: 'blogs#new',       as: :blogs_new
+  post    '/blogs',              to: 'blogs#create',    as: :blogs_create
+  get     '/blogs/:id',          to: 'blogs#show',      as: :blogs_show
+  get     '/blogs/:id/edit',     to: 'blogs#edit',      as: :blogs_edit
+  patch   '/blogs/:id',          to: 'blogs#update',    as: :blogs_update
+  get     '/blogs/:id/delete',   to: 'blogs#destroy',   as: :blogs_destroy
+  delete  '/blogs/:id',          to: 'blogs#destroy',   as: :blogs_destroy
 
-  get 'blogs/new'
 
-  get 'blogs/edit'
 
-  get 'blogs/show'
-
-  get 'blogs/update'
-
-  get 'blogs/destroy'
-
-  get  '/',  to: 'home#index',  as: :root
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
