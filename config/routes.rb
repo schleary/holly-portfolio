@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
+  get 'holly/index'
+
   get     '/',                   to: 'home#index',      as: :root
+
+  get     '/holly',              to: 'holly#index',     as: :hollys
 
   # blog routes
   get     '/blogs',              to: 'blogs#index',     as: :blogs
