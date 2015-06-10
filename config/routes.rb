@@ -26,6 +26,16 @@ Rails.application.routes.draw do
   get     '/blogs/:id/delete',   to: 'blogs#destroy',   as: :blogs_delete
   delete  '/blogs/:id',          to: 'blogs#destroy',   as: :blogs_destroy
 
+  # projects routes
+  get     '/projects',              to: 'projects#index',     as: :projects
+  get     '/projects/new',          to: 'projects#new',       as: :projects_new
+  post    '/projects',              to: 'projects#create',    as: :projects_create
+  get     '/projects/:id',          to: 'projects#show',      as: :projects_show
+  get     '/projects/:id/edit',     to: 'projects#edit',      as: :projects_edit
+  patch   '/projects/:id',          to: 'projects#update',    as: :projects_update
+  get     '/projects/:id/delete',   to: 'projects#destroy',   as: :projects_delete
+  delete  '/projects/:id',          to: 'projects#destroy',   as: :projects_destroy
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
