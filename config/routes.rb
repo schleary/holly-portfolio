@@ -1,22 +1,11 @@
 Rails.application.routes.draw do
 
-  get 'resumes/create'
-
-  get 'resumes/new'
-
-  get 'resumes/edit'
-
-  get 'resumes/show'
-
-  get 'resumes/update'
-
-  get 'resumes/destroy'
-
-  get 'holly/index'
 
   get     '/',                   to: 'home#index',      as: :root
 
   get     '/holly',              to: 'holly#index',     as: :hollys
+
+  get     '/resumes',            to: 'resumes#show',    as: :resumes
 
   # blog routes
   get     '/blogs',              to: 'blogs#index',     as: :blogs
