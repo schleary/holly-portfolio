@@ -13,43 +13,35 @@
  *= require_tree .
  *= require_self
  */
-
-a {
-   text-decoration: none;
-   display: inline;
-   text-align: center;
- }
-
- /* unvisited link */
-a:link {
-    color: black;
+body{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-/* visited link */
-a:visited {
-    color: black;
+a {
+  text-decoration: none;
+  display: inline;
+  text-align: center;
+  color:#606060;
+  font-family: "proxima-nova-alt", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 3px;
 }
 
 /* mouse over link */
-a:hover {
-    color: red;
-}
-
-/* selected link */
-a:active {
-    color: blue;
+nav a:hover {
+  margin-bottom: 40%;
+  border-bottom: 1px solid #FF6600;
 }
 
 li {
-   text-decoration: none;
-   display: inline;
-   text-align: center;
-   margin: 2%;
- }
+  text-decoration: none;
+  display: inline;
+  text-align: center;
+  margin: 2%;
+}
 
- nav {
-   text-align: center;
- }
+nav {
+  text-align: center;
+}
 
 footer {
   text-align: center;
