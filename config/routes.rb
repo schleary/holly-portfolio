@@ -2,13 +2,14 @@ Rails.application.routes.draw do
 
   get     '/',                   to: 'home#index',      as: :root
 
+  # blog routes
   get     '/blogs',              to: 'blogs#index',     as: :blogs
   get     '/blogs/new',          to: 'blogs#new',       as: :blogs_new
   post    '/blogs',              to: 'blogs#create',    as: :blogs_create
   get     '/blogs/:id',          to: 'blogs#show',      as: :blogs_show
   get     '/blogs/:id/edit',     to: 'blogs#edit',      as: :blogs_edit
   patch   '/blogs/:id',          to: 'blogs#update',    as: :blogs_update
-  get     '/blogs/:id/delete',   to: 'blogs#destroy',   as: :blogs_destroy
+  get     '/blogs/:id/delete',   to: 'blogs#destroy',   as: :blogs_delete
   delete  '/blogs/:id',          to: 'blogs#destroy',   as: :blogs_destroy
 
 
