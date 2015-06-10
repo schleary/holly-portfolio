@@ -1,6 +1,5 @@
-class BlogsController < ApplicationController
+class ProjectsController < ApplicationController
   def index
-    @blogs = Blog.all
   end
 
   def create
@@ -20,5 +19,4 @@ class BlogsController < ApplicationController
 
   def destroy
   end
-
 end

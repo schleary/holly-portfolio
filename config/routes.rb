@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'projects/index'
+
+  get 'projects/create'
+
+  get 'projects/new'
+
+  get 'projects/edit'
+
+  get 'projects/show'
+
+  get 'projects/update'
+
+  get 'projects/destroy'
+
   get     '/',                   to: 'home#index',      as: :root
 
   # blog routes
