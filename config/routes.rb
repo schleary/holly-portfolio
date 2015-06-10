@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  get 'resumes/create'
+
+  get 'resumes/new'
+
+  get 'resumes/edit'
+
+  get 'resumes/show'
+
+  get 'resumes/update'
+
+  get 'resumes/destroy'
+
   get 'holly/index'
 
   get     '/',                   to: 'home#index',      as: :root
