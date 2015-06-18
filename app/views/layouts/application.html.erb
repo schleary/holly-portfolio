@@ -6,29 +6,44 @@
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  <nav>
-    <ul>
-      <%= link_to "Home", root_path %>
-      <%= link_to "Projects", projects_path %>
-      <%= link_to "Resume", resumes_path %>
-      <%= link_to "Blog", blogs_path %>
-      <%= link_to "Holly", hollys_path %>
-    </ul>
-  </nav>
+  <div class="container">
 
-<%= yield %>
+    <div id="win-height">
 
-<footer>
-  <ul>
-    <li><a href="https://plus.google.com/u/0/113418906208509747659/posts" target="_blank">g+</a></li>
-    <li><a href="https://github.com/schleary" target="_blank">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/profile/view?id=233832133&trk=nav_responsive_tab_profile_pic" target="_blank">LinkedIn</a></li>
-    <li><a href="https://twitter.com/schleary" target="_blank">Twitter</a></li>
-    <li><a href="http://adadevelopersacademy.org/" target="_blank">Ada</a></li>
-  </ul>
-</footer>
+      <nav>
+        <ul>
+          <%= link_to "Home", root_path %>
+          <%= link_to "Projects", projects_path %>
+          <%= link_to "Resume", resumes_path %>
+          <%= link_to "Blog", blogs_path %>
+          <%= link_to "Holly", hollys_path %>
+        </ul>
+      </nav>
+
+    <%= yield %>
+
+    </div><!--winheight-->
+
+    <footer>
+      <ul>
+        <li><a href="https://plus.google.com/u/0/113418906208509747659/posts" target="_blank">g+</a></li>
+        <li><a href="https://github.com/schleary" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/profile/view?id=233832133&trk=nav_responsive_tab_profile_pic" target="_blank">LinkedIn</a></li>
+        <li><a href="https://twitter.com/schleary" target="_blank">Twitter</a></li>
+        <li><a href="http://adadevelopersacademy.org/" target="_blank">Ada</a></li>
+      </ul>
+    </footer>
+
+  </div><!--container-->
 
 </body>
 </html>

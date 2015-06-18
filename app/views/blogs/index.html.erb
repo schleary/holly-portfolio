@@ -1,1 +1,9 @@
 <h1>Blog</h1>
+
+<sidebar>
+  <ul>
+    <% @blogs.each do |blog| %>
+      <%= link_to blog.title, blogs_show_path(blog) %>
+    <% end %>
+  </ul>
+</sidebar>

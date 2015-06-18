@@ -1,2 +1,11 @@
-<h1>Blogs#new</h1>
-<p>Find me in app/views/blogs/new.html.erb</p>
+NEW BLOG
+
+<%= form_for @blog do |blog| %>
+  <%= blog.label :title %>:
+  <%= blog.text_field :title %><br />
+
+  <%= blog.label :date %>:
+  <%= blog.datetime_field :date %><br />
+
+  <%= blog.submit %>
+<% end %>

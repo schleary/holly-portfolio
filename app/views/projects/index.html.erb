@@ -1,14 +1,20 @@
 <h1>Projects</h1>
 
 
-  <!-- projects -->
-  <div class="projects">
-    <ul>
-      <li><a href="http://wat-do-seattle.com/" target="_blank">Wat Do</a></li>
-      <li><a href="https://feeed-meee.herokuapp.com/" target="_blank">Feed Me</a></li>
-      <li><a href="https://gardenrow.herokuapp.com/" target="_blank">Ada's Garden</a></li>
-      <li><a href="http://betsy-rails.herokuapp.com/" target="_blank">Scraps</a></li>
-      <li><a href="https://muzikbox.herokuapp.com/" target="_blank">Muzik Box</a></li>
-      <!-- <li><a href="pic">The Trippy Caterpillar</a></li> add this so you can play? -->
-    </ul>
-  </div>
+<!-- projects -->
+<div class="projects">
+  <ul>
+    <li><a href="http://wat-do-seattle.com/" target="_blank">Wat Do</a></li>
+    <li><a href="https://feeed-meee.herokuapp.com/" target="_blank">Feed Me</a></li>
+    <li><a href="https://gardenrow.herokuapp.com/" target="_blank">Ada's Garden</a></li>
+    <li><a href="http://betsy-rails.herokuapp.com/" target="_blank">Scraps</a></li>
+    <li><a href="https://muzikbox.herokuapp.com/" target="_blank">Muzik Box</a></li>
+    <!-- <li><a href="pic">The Trippy Caterpillar</a></li> add this so you can play? -->
+  </ul>
+</div>
+
+<ul>
+  <% @projects.each do |project| %>
+    <%= link_to project.title, projects_show_path(project) %>
+  <% end %>
+</ul>

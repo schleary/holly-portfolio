@@ -1,21 +1,21 @@
 Rails.application.routes.draw do
 
 
-  get     '/',                   to: 'home#index',      as: :root
+  get     '/',                      to: 'home#index',         as: :root
 
-  get     '/holly',              to: 'holly#index',     as: :hollys
+  get     '/holly',                 to: 'holly#index',        as: :hollys
 
-  get     '/resume',            to: 'resumes#show',    as: :resumes
+  get     '/resume',                to: 'resumes#show',       as: :resumes
 
   # blog routes
-  get     '/blog',              to: 'blogs#index',     as: :blogs
-  get     '/blog/new',          to: 'blogs#new',       as: :blogs_new
-  post    '/blog',              to: 'blogs#create',    as: :blogs_create
-  get     '/blog/:id',          to: 'blogs#show',      as: :blogs_show
-  get     '/blog/:id/edit',     to: 'blogs#edit',      as: :blogs_edit
-  patch   '/blog/:id',          to: 'blogs#update',    as: :blogs_update
-  get     '/blog/:id/delete',   to: 'blogs#destroy',   as: :blogs_delete
-  delete  '/blog/:id',          to: 'blogs#destroy',   as: :blogs_destroy
+  get     '/blog',                  to: 'blogs#index',        as: :blogs
+  get     '/blog/new',              to: 'blogs#new',          as: :blogs_new
+  post    '/blog',                  to: 'blogs#create',       as: :blogs_create
+  get     '/blog/:id',              to: 'blogs#show',         as: :blogs_show
+  get     '/blog/:id/edit',         to: 'blogs#edit',         as: :blogs_edit
+  patch   '/blog/:id',              to: 'blogs#update',       as: :blogs_update
+  get     '/blog/:id/delete',       to: 'blogs#destroy',      as: :blogs_delete
+  delete  '/blog/:id',              to: 'blogs#destroy',      as: :blogs_destroy
 
   # projects routes
   get     '/projects',              to: 'projects#index',     as: :projects
