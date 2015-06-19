@@ -1,0 +1,7 @@
+<sidebar>
+  <ul>
+    <% @blogs.each do |blog| %>
+      <li><%= link_to blog.title, blogs_show_path(blog) %></li>
+    <% end %>
+  </ul>
+</sidebar>

@@ -29,7 +29,18 @@
         </ul>
       </nav>
 
-    <%= yield %>
+      <div class="row">
+        <div class="col-md-10">
+          <%= yield %>
+        </div>
+        <div class="col-md-2">
+
+          <% if @blogs %>
+            <%= render "layouts/blog_sidebar" %>
+          <% end %>
+        </div>
+
+      </div>
 
     </div><!--winheight-->
 

@@ -81,7 +81,25 @@ nav a:visited {
   color:#606060;
 }
 
-li {
+sidebar{
+  text-align: right;
+  margin: 2%;
+}
+
+sidebar li {
+  text-decoration: none;
+  margin: 2%;
+  list-style: none;
+}
+
+sidebar li:hover {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #FF6600;
+  text-decoration: none;
+  color:#606060;
+}
+
+footer li {
   text-decoration: none;
   display: inline;
   text-align: center;
