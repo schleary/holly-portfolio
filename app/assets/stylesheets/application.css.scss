@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+ /*
+ *= require rails_bootstrap_forms
+ */
 body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -21,11 +25,16 @@ body{
   min-height: 750px;
 }
 
-sidebar{
-  
+a {
+  text-decoration: none !important;
+  display: inline;
+  text-align: center;
+  color:#606060 !important;
+  font-family: "proxima-nova-alt", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 3px;
 }
 
-a {
+a:hover {
   text-decoration: none;
   display: inline;
   text-align: center;
@@ -34,10 +43,42 @@ a {
   letter-spacing: 3px;
 }
 
+a:visited {
+  text-decoration: none;
+  display: inline;
+  text-align: center;
+  color:#606060;
+  font-family: "proxima-nova-alt", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 3px;
+}
+
+nav {
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+nav a:link {
+  margin: 5%;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color:#606060;
+}
+
 /* mouse over link */
 nav a:hover {
-  margin-bottom: 40%;
+  margin: 5%;
+  padding-bottom: 10px;
   border-bottom: 1px solid #FF6600;
+  text-decoration: none;
+  color:#606060;
+}
+
+nav a:visited {
+  margin: 5%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #FF6600;
+  text-decoration: none;
+  color:#606060;
 }
 
 li {
@@ -47,12 +88,26 @@ li {
   margin: 2%;
 }
 
-nav {
+footer {
   text-align: center;
 }
 
-footer {
+footer a:link{
   text-align: center;
+  text-decoration: none;
+  color:#606060;
+}
+
+footer a:hover{
+  text-align: center;
+  text-decoration: none;
+  color:#606060;
+}
+
+footer a:visited{
+  text-align: center;
+  text-decoration: none;
+  color:#606060;
 }
 
 .projects {

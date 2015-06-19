@@ -1,2 +1,7 @@
-<h1>Blogs#edit</h1>
-<p>Find me in app/views/blogs/edit.html.erb</p>
+<h1>Edit</h1>
+
+<%= bootstrap_form_for(@blog) do |blog| %>
+  <%= blog.text_field :title %>
+  <%= blog.datetime_field :date %>
+  <%= f.submit "Update" %>
+<% end %>

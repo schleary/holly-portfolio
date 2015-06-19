@@ -1,11 +1,7 @@
 NEW BLOG
 
-<%= bootstrap_form_for @blog do |blog| %>
-  <%= blog.label :title %>:
-  <%= blog.text_field :title %><br />
-
-  <%= blog.label :date %>:
-  <%= blog.datetime_field :date %><br />
-
-  <%= blog.submit %>
+<%= bootstrap_form_for(@blog) do |blog| %>
+  <%= blog.text_field :title %>
+  <%= blog.datetime_field :date %>
+  <%= blog.submit "Create"%>
 <% end %>
