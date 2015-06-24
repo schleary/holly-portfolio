@@ -81,7 +81,7 @@ nav a:hover {
 .portfolio-pic{
   display: inline-block;
   margin: 2%;
-  box-shadow: 5px 5px 20px #D0D0D0;
+  // box-shadow: 5px 5px 20px #D0D0D0;
 }
 
 .portfolio-title{
@@ -256,7 +256,7 @@ body{
 				}
 			}
 			h1{
-				height: 100%;
+				height: 105%;
 				width: 100%;
 				margin: 0;
 				-webkit-transition: margin-top 0.15s ease-in;
@@ -266,7 +266,7 @@ body{
 				transition: margin-top 0.15s ease-in;
 			}
 			div{
-				height: 100%;
+				height: 105%;
 				width: 100%;
 			}
 		}
@@ -275,17 +275,17 @@ body{
 
 /*TOFIX Can I mixin or loop through a list here? */
 
-.mainnav a:nth-child(1) h1 {border-bottom: 3px solid $red;}
+.mainnav a:nth-child(1) h1 {border-bottom: 1px solid $red;}
 .mainnav a:nth-child(1) div {background-color: $red;}
 
-.mainnav li:nth-child(2) h1 {border-bottom: 3px solid $green;}
+.mainnav li:nth-child(2) h1 {border-bottom: 1px solid $green;}
 .mainnav li:nth-child(2) div {background-color: $green;}
 
-.mainnav li:nth-child(3) h1 {border-bottom: 3px solid $yellow;}
+.mainnav li:nth-child(3) h1 {border-bottom: 1px solid $yellow;}
 .mainnav li:nth-child(3) div {background-color: $yellow;}
 
-.mainnav li:nth-child(4) h1 {border-bottom: 3px solid $blue;}
+.mainnav li:nth-child(4) h1 {border-bottom: 1px solid $blue;}
 .mainnav li:nth-child(4) div {background-color: $blue;}
 
-.mainnav li:nth-child(5) h1 {border-bottom: 3px solid $purple;}
+.mainnav li:nth-child(5) h1 {border-bottom: 1px solid $purple;}
 .mainnav li:nth-child(5) div {background-color: $purple;}
