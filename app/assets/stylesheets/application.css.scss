@@ -19,6 +19,7 @@
  */
 body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-color: #252525 !important;
 }
 
 #win-height{
@@ -259,6 +260,7 @@ body{
 				height: 105%;
 				width: 100%;
 				margin: 0;
+        line-height: 5;
 				-webkit-transition: margin-top 0.15s ease-in;
 				-moz-transition: margin-top 0.15s ease-in;
 				-o-transition: margin-top 0.15s ease-in;
