@@ -19,7 +19,7 @@
  */
 body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-color: #252525 !important;
+  // background-color: #252525 !important;
 }
 
 #win-height{
@@ -197,7 +197,7 @@ $white: #FF6600;
 $leftSideHug: 25px;
 $topSideHug: 70px;
 $navSpacing: 3px;
-$navElements: 6;
+$navElements: 7;
 $navWidth: 1200px;
 $navBlockUnit: $navWidth / $navElements;
 
