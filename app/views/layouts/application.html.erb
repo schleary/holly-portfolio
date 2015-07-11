@@ -25,7 +25,7 @@
           <%= link_to "Projects", projects_path %>
           <%= link_to "Resume", resumes_path %>
           <%= link_to "Blog", blogs_path %>
-          <%= link_to "Holly", hollys_path %>
+          <%= link_to "About", hollys_path %>
         </ul>
       </nav>
 
@@ -50,9 +50,11 @@
 
     </div><!--winheight-->
 
+
     <% if (params["controller"].eql?("holly") && params["action"].eql?("index"))  %>
       <%= render "layouts/contact_footer" %>
     <% end %>
+
 
   </div><!--container-->
 

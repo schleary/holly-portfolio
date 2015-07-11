@@ -1,3 +1,29 @@
+<script>
+
+  $(document).ready(function() {
+
+    $('.content-area').css('display', 'none');
+
+    $('.content-area').fadeIn(500);
+
+
+    $('.thing').click(function(event) {
+
+      event.preventDefault();
+
+      newLocation = this.href;
+
+      $('.content-area').fadeOut(500, newpage);
+
+    });
+
+    function newpage() {
+      window.location = newLocation;
+    }
+  });
+
+</script>
+
 <p></br> </p>
 
 <center><h1><strong>H O L L Y &nbsp; M. &nbsp;L E A R Y</strong></h1></center>

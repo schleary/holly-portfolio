@@ -9,6 +9,31 @@
     <! <li><a href="pic">The Trippy Caterpillar</a></li> add this so you can play? -->
   <!-- </ul>
 </div>  -->
+<script>
+
+  $(document).ready(function() {
+
+    $('.content-area').css('display', 'none');
+
+    $('.content-area').fadeIn(500);
+
+
+    $('.thing').click(function(event) {
+
+      event.preventDefault();
+
+      newLocation = this.href;
+
+      $('.content-area').fadeOut(500, newpage);
+
+    });
+
+    function newpage() {
+      window.location = newLocation;
+    }
+  });
+
+</script>
 
 <ul>
   <% @projects.each do |project| %>
