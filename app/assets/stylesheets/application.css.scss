@@ -23,7 +23,7 @@ body{
 }
 
 #win-height{
-  min-height: 750px;
+  min-height: 675px;
 }
 
 a {
@@ -161,6 +161,22 @@ footer a:visited{
   color:#606060;
 }
 
+
+.icons a{
+  fill: #000;
+  background-color: #C8C8C8;
+  border-radius: 25%;
+  display: inline-block;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.icons a:hover{
+  background-color:#FF6600;
+}
+
+
 .projects {
   text-align: center;
 }
@@ -176,6 +192,7 @@ iframe[seamless] {
 iframe {
   margin-left: 75px;
 }
+
 
 
 
