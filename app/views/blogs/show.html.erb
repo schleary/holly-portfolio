@@ -1,4 +1,6 @@
-<%= @blog.title %>
+<h3><%= @blog.title %></h3>
+<i><%= @blog.date.strftime("%A, %B %e, %Y") %></i><br><br>
+<%= simple_format(@blog.content) %>
 
 <script>
 

@@ -1,8 +1,9 @@
+<br>
 <% @blogs.each do |blog| %>
   <h3><%= blog.title %></h3>
-  Date: <%= blog.date %><br>
-  Content: <%= blog.content %><br>
-  ***************************<br>
+  <i><%= blog.date.strftime("%A, %B %e, %Y") %></i><br><br>
+  <%= simple_format(blog.content) %>
+  <hr>
 <% end %>
 </ul>
 
