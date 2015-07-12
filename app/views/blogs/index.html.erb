@@ -1,4 +1,10 @@
-<h1>Blog</h1>
+<% @blogs.each do |blog| %>
+  <h3><%= blog.title %></h3>
+  Date: <%= blog.date %><br>
+  Content: <%= blog.content %><br>
+  ***************************<br>
+<% end %>
+</ul>
 
 <script>
 
