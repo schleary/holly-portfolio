@@ -53,6 +53,7 @@ nav {
   text-transform: uppercase;
   margin: 3.5%;
   text-align: center;
+  margin-bottom: 6%;
 }
 
 nav a:link {
@@ -164,9 +165,17 @@ footer a:visited{
   text-align: center;
 }
 
+iframe:focus {
+    outline: none;
+}
 
+iframe[seamless] {
+    display: block;
+}
 
-
+iframe {
+  margin-left: 75px;
+}
 
 
 

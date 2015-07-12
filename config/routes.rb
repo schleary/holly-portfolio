@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get     '/holly',                 to: 'holly#index',        as: :hollys
 
   get     '/resume',                to: 'resumes#show',       as: :resumes
+  get     '/pdf',                   to: 'resumes#pdf',        as: :resume_pdf
 
   # blog routes
   get     '/blog',                  to: 'blogs#index',        as: :blogs

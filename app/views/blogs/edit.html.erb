@@ -1,7 +1,7 @@
 <h1>Edit</h1>
 
-<%= bootstrap_form_for(@blog) do |blog| %>
-  <%= blog.text_field :title %>
-  <%= blog.datetime_field :date %>
-  <%= f.submit "Update" %>
+<%= bootstrap_form_for(@blog) |b| %>
+  <%= b.text_field :title %>
+  <%= b.datetime_field :date %>
+  <%= b.submit "Update" %>
 <% end %>

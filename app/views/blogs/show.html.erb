@@ -1,6 +1,7 @@
 <h3><%= @blog.title %></h3>
 <i><%= @blog.date.strftime("%A, %B %e, %Y") %></i><br><br>
 <%= simple_format(@blog.content) %>
+<%= link_to "Edit #{@blog.title}", blogs_edit_path(@blog), class:"s btn btn-default" %>
 
 <script>
 

@@ -16,4 +16,14 @@ class ResumesController < ApplicationController
 
   def destroy
   end
+
+  def show
+  end
+
+  def pdf
+    @pdf = File.join(Rails.root, "tmp/HollyLearyResume.pdf")
+    # send_file(@pdf, :filename => "HollyLearyResume.pdf", :type => "application/pdf")
+    send_file(@pdf, :filename => "HollyLearyResume.pdf", :disposition => 'inline', :type => "application/pdf")
+  end
+
 end
