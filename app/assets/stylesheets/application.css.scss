@@ -180,6 +180,29 @@ footer a:visited{
   text-align: center;
 }
 
+.resume-title{
+  color: #FF6600;
+  font-size: 32px;
+  font-family: "proxima-nova-alt", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.I{
+  color: black;
+  margin: 20px;
+  display: inline-block;
+}
+
+.small-r{
+  color: #606060;
+  font-size: 20px;
+  display: inline-block;
+  // text-transform: uppercase;
+}
+
 iframe:focus {
     outline: none;
 }
