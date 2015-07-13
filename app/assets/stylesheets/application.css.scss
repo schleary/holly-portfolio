@@ -53,7 +53,6 @@ nav {
   text-transform: uppercase;
   margin: 3.5%;
   text-align: center;
-  margin-bottom: 6%;
 }
 
 nav a:link {
@@ -221,10 +220,10 @@ $purple: #FF6600;
 $white: #FF6600;
 
 /* Navigation variables */
-$leftSideHug: 25px;
+$leftSideHug: 30px;
 $topSideHug: 70px;
 $navSpacing: 3px;
-$navElements: 7;
+$navElements: 6;
 $navWidth: 1200px;
 $navBlockUnit: $navWidth / $navElements;
 
