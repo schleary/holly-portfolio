@@ -221,7 +221,7 @@ $white: #FF6600;
 
 /* Navigation variables */
 $leftSideHug: 30px;
-$topSideHug: 70px;
+$topSideHug: 0px;
 $navSpacing: 3px;
 $navElements: 6;
 $navWidth: 1200px;
@@ -272,7 +272,7 @@ body{
 		float: left;
 		a {
 			color: $white;
-			background: rgba(16,16,16, 0.6);
+			background: lightgray;
 			display: block;
 			height: 105%;
 			width: 100%;
