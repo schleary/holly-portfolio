@@ -364,3 +364,8 @@ body{
 
 .mainnav li:nth-child(5) h1 {border-bottom: 1px solid $purple;}
 .mainnav li:nth-child(5) div {background-color: $purple;}
+
+code{
+  color: orange !important;
+  background-color: lightorange !important;
+}
