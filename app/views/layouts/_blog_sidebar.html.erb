@@ -1,7 +1,7 @@
 <sidebar>
   <ul>
     <% @blogs.each do |blog| %>
-      <li><%= link_to blog.title, blogs_show_path(blog) %></li>
+      <li><div class="blog-title"><%= link_to blog.title, blogs_show_path(blog) %></div></li>
     <% end %>
   </ul>
 </sidebar>
