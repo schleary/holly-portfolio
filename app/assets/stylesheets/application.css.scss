@@ -26,6 +26,26 @@ body{
   min-height: 750px;
 }
 
+h3{
+  color: #FF6600 !important;
+  font-size: 20px;
+  font-family: "proxima-nova-alt", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  // border-bottom: 1px solid #606060;
+  padding-bottom: 12px;
+  letter-spacing: 4px;
+}
+
+.date{
+  color: lightgray;
+  font-style: italic;
+}
+
+.text{
+  color: #606060;
+  font-size: 16px;
+}
+
+
 a {
   text-decoration: none !important;
   display: inline;
