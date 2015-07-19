@@ -1,36 +1,14 @@
-<script>
-
-  $(document).ready(function() {
-
-    $('.content-area').css('display', 'none');
-
-    $('.content-area').fadeIn(500);
-
-
-    $('.thing').click(function(event) {
-
-      event.preventDefault();
-
-      newLocation = this.href;
-
-      $('.content-area').fadeOut(500, newpage);
-
-    });
-
-    function newpage() {
-      window.location = newLocation;
-    }
-  });
-
-</script>
-
 <!-- <iframe src="/pdf#zoom=120" style="width:82%; height:1020px;" frameborder="0"></iframe> -->
 
+<div class="resume-title">
+  Holly Leary
+</div>
+<div class="small-r">
+  Software Development Engineer
+</div>
 
-<div class="resume-title">Holly Leary <div class="I"> | </div><div class="small-r"> Software Development Engineer </div></div>
 
-
-<h3>E X P E R I E N C E</h3>
+<h3>Experience</h3>
 <hr/>
 
 <strong><a href="http://www.apexlearning.com/">Apex Learning</a></strong> (Seattle, WA)<br/>
@@ -51,7 +29,7 @@
 </ul>
 </br>
 
-<h3>S K I L L S &nbsp; &amp; &nbsp;  T E C H N O L O G I E S</h3>
+<h3>Skills & Technologies</h3>
 <hr/>
 <ul>
 <li><strong>Languages:</strong> C#, Java, Python, Ruby, HTML, LaTeX, CSS, Markdown, SQL, JSON</li>
@@ -60,7 +38,7 @@
 </ul>
 </br>
 
-<h3>E D U C A T I O N &nbsp;  &amp; &nbsp;  H O N O R S</h3>
+<h3>Education & Honors</h3>
 <hr/>
 
 <strong>Seattle Central Community College</strong> (Seattle, WA)<br/>
@@ -86,7 +64,7 @@ Cumulative GPA: 3.91 / 4.0 <br/>
 </ul>
 </br>
 
-<h3>W O R K  &nbsp; E X P E R I E N C E</h3>
+<h3>Work Experience</h3>
 <hr />
 <strong>Mulholland/Wageman &amp; Erlanger/Coopersmith Families</em></strong> (Seattle, WA)<br/>
 <em><strong>Nanny </strong></em> // 2011 - 2013<br/>
@@ -103,7 +81,33 @@ Cumulative GPA: 3.91 / 4.0 <br/>
 </ul>
 </br>
 
-<h3>R E F E R E N C E S</h3>
+<h3>References</h3>
 <hr/>
 
 <p>Available upon request.</p>
+
+<script>
+
+  $(document).ready(function() {
+
+    $('.content-area').css('display', 'none');
+
+    $('.content-area').fadeIn(500);
+
+
+    $('.thing').click(function(event) {
+
+      event.preventDefault();
+
+      newLocation = this.href;
+
+      $('.content-area').fadeOut(500, newpage);
+
+    });
+
+    function newpage() {
+      window.location = newLocation;
+    }
+  });
+
+</script>

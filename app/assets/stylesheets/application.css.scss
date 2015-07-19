@@ -26,13 +26,17 @@ body{
   min-height: 750px;
 }
 
+article {
+  margin: 5%;
+}
+
 h2{
   color: #FF6600 !important;
   font-size: 20px;
   font-family: "proxima-nova-alt", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   // border-bottom: 1px solid #606060;
   padding-bottom: 12px;
-  letter-spacing: 4px;
+  // letter-spacing: 4px;
 }
 
 .blog-title{
@@ -214,15 +218,11 @@ footer a:visited{
   font-family: "proxima-nova-alt", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   letter-spacing: 4px;
   display: inline-block;
-  margin-bottom: 2%;
-  margin-top: 2%;
+  padding-right: 2%;
+  margin: 2% 2% 2% 0;
+  border-right: 1px solid black;
 }
 
-.I{
-  color: black;
-  margin: 20px;
-  display: inline-block;
-}
 
 .small-r{
   color: #606060;
@@ -321,6 +321,10 @@ body{
 		width: $navBlockUnit;
 		padding: $navSpacing;
 		float: left;
+    .description{
+      padding: 0;
+      margin: 0;
+      }
 		a {
 			color: $white;
 			background: lightgray;
